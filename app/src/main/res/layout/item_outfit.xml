@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Outfit Name Text -->
+    <TextView
+        android:id="@+id/textViewOutfitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outfit Name"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Horizontal Layout for Images -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Shirt Image -->
+        <ImageView
+            android:id="@+id/imageViewShirt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_image"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Bottom Image -->
+        <ImageView
+            android:id="@+id/imageViewBottom"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_image"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Shoes Image -->
+        <ImageView
+            android:id="@+id/imageViewShoes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_image"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Accessories Image -->
+        <ImageView
+            android:id="@+id/imageViewAccessories"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_image"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Outfit"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+</LinearLayout>

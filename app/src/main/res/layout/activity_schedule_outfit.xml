@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Calendar View -->
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Selected Outfit and Shirt Image -->
+    <TextView
+        android:id="@+id/textViewSelectedOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Outfit"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewShirt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Schedule Outfit Button -->
+    <Button
+        android:id="@+id/buttonScheduleOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Outfit"
+        android:layout_marginTop="16dp" />
+
+    <!-- Scheduled Outfits List Container -->
+    <LinearLayout
+        android:id="@+id/scheduledOutfitsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" /> <!-- This will be shown dynamically -->
+</LinearLayout>

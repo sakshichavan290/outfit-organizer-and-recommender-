@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Photo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/ic_default_profile"
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Profile Photo"
+                />
+
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Profile Photo"
+                android:contentDescription="Change Profile Photo"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:hint="Enter Username"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSaveUsername"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Save Username"
+            android:contentDescription="Save Username"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Dark Mode Toggle -->
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:text="Dark Mode"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Notification Preferences -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Notification Preferences"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Switch
+            android:id="@+id/switchPushNotifications"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:text="Push Notifications"
+            android:layout_marginBottom="16dp" />
+
+        <Switch
+            android:id="@+id/switchEmailNotifications"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:text="Email Notifications"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:backgroundTint="@color/red"
+            android:contentDescription="Logout"
+            android:text="Logout"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
+

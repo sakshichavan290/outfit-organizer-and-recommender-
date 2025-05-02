@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Outfit Name -->
+        <EditText
+            android:id="@+id/editTextOutfitName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Outfit Name"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/input_background"/>
+
+        <!-- Shirt Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shirt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewShirt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image"
+            android:background="@drawable/image_border"/>
+
+        <Button
+            android:id="@+id/buttonSelectShirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Shirt" />
+
+        <!-- Bottom Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewBottom"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image"
+            android:background="@drawable/image_border"/>
+
+        <Button
+            android:id="@+id/buttonSelectBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Bottom" />
+
+        <!-- Shoes Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewShoes"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image"
+            android:background="@drawable/image_border"/>
+
+        <Button
+            android:id="@+id/buttonSelectShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Shoes" />
+
+        <!-- Accessories Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewAccessories"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image"
+            android:background="@drawable/image_border"/>
+
+        <Button
+            android:id="@+id/buttonSelectAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Accessories" />
+
+        <!-- Save Outfit Button -->
+        <Button
+            android:id="@+id/buttonSaveOutfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Outfit"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

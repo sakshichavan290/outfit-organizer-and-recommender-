@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Outfit Organizer</string>
+
+    <!-- General Strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_desc">Image description</string>
+
+    <!-- Clothing Categories -->
+    <string-array name="categories">
+        <item>Shirt</item>
+        <item>Bottom</item>
+        <item>Accessories</item>
+        <item>Jewelry</item>
+    </string-array>
+
+    <!-- Occasion Categories -->
+    <string-array name="occasion_array">
+        <item>Casual</item>
+        <item>Formal</item>
+        <item>Sportswear</item>
+        <item>Party</item>
+        <item>Business</item>
+        <item>Travel</item>
+    </string-array>
+
+    <!-- Weather Categories (Only 3 options) -->
+    <string-array name="weather_array">
+        <item>Sunny</item>
+        <item>Windy</item>
+        <item>Rainy</item>
+    </string-array>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Image View for Dress -->
+    <ImageView
+        android:id="@+id/dressImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Title of the Dress -->
+    <TextView
+        android:id="@+id/dressTitle"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Price of the Dress -->
+    <TextView
+        android:id="@+id/dressPrice"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Discount of the Dress -->
+    <TextView
+        android:id="@+id/dressDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:textColor="#FF5252"
+        android:textSize="12sp" />
+
+    <!-- Horizontal Layout for Wishlist and Cart Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Wishlist Button -->
+        <ImageButton
+            android:id="@+id/wishlistButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Wishlist"
+            android:src="@drawable/ic_wishlist" />
+        <Button
+            android:id="@+id/buynowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now" />
+
+        <!-- Add to Cart Button -->
+        <ImageButton
+            android:id="@+id/addToCartButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add to Cart"
+            android:src="@drawable/ic_cart" />
+    </LinearLayout>
+</LinearLayout>

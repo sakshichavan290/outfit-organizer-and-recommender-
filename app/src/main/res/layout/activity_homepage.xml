@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homepagebackground"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/vcloset"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:includeFontPadding="true"
+                android:padding="15dp"
+                android:text="Virtual Closet"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/outfit"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:text="Outfits"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/buy"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:text="Buy preloved clothes"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/aireco"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:text="Recommendations"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/schedule"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:text="Schedule Outfits"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/setting"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/dark_orchid"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
